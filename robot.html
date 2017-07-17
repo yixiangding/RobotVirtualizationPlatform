@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>WebGL Test</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</style>
+</head>
+
+<body>
+	<div id="output"></div>
+	<span id="input">
+		<!-- <form id="fm" name="form1" method="get" action="form_action.asp"> -->
+    	<label class="lb">极坐标：</label><br>
+        <label class="lb">底座关节: (-180~180)</label>
+    	<input id='j1' class="joint" type="text" value="0"/><br/>
+    	<!-- <label class="lb">Joint2: (-180~180)</label>
+    	<input id='j2' class="joint" type="text" value="0" disabled><br/>
+    	<label class="lb">Joint3: (-180~180)</label>
+    	<input id='j3' class="joint" type="text" value="0" disabled><br/> -->
+        <label class="lb">大臂关节: (-180~180)</label>
+    	<input id='j4' class="joint" type="text" value="0"/><br/>
+    	<label class="lb">小臂关节: (-180~180)</label>
+    	<input id='j5' class="joint" type="text" value="0"/><br/>
+    	<!-- <label class="lb">Joint6: (-180~180)</label>
+    	<input id='j6' class="joint" type="text" value="0" disabled><br/>
+    	<label class="lb">Joint7: (-180~180)</label>
+    	<input id='j7' class="joint" type="text" value="0" disabled><br/>
+    	<label class="lb">Joint8: (-180~180)</label>
+    	<input id='j8' class="joint" type="text" value="0" disabled><br/>
+    	<label class="lb">Joint9: (-180~180)</label>
+    	<input id='j9' class="joint" type="text" value="0"/><br/> -->    	
+    	<input class="btn1" type="button" value="提交" onclick="submit()"/><br><br><br>
+<!--         <label class="lb">joint intime angle:</label><br>
+        <input type="text" id="ro" class="coordination" value=0 disabled style="background:#CCCCCC">
+        <input type="text" id="ba" class="coordination" value=0 disabled style="background:#CCCCCC">
+        <input type="text" id="sa" class="coordination" value=0 disabled style="background:#CCCCCC"><br> -->
+        <label class="lb">笛卡尔坐标：</label><br>
+        <label class="lb">实时坐标:</label><br>
+        <input type="text" id="sx" class="coordination" value=291 disabled style="background:#CCCCCC">
+        <input type="text" id="sy" class="coordination" value=0 disabled style="background:#CCCCCC">
+        <input type="text" id="sz" class="coordination" value=157 disabled style="background:#CCCCCC"><br>
+        <label class="lb">目标坐标 （G1）:</label><br>
+        <input type="text" id="dx" class="coordination" value=291>
+        <input type="text" id="dy" class="coordination" value=0>
+        <input type="text" id="dz" class="coordination" value=157><br>
+        <input class="btn1" type="button" value="规划" onclick="plan()"><br><br>
+        <input class="btn1" type="button" value="打印" onclick="print()"><br><br>
+<!-- 		</form> -->
+	</span>
+<script type="text/javascript" src="three.js"></script>
+<script type="text/javascript" src="jquery-3.1.1.js"></script>
+<script type="text/javascript" src="js/loaders/ColladaLoader.js"></script>
+<script type="text/javascript" src="
+	js/controls/OrbitControls.js"></script>
+<script type="text/javascript" src="js/libs/stats.min.js"></script>
+<script type="text/javascript" src="js/libs/tween.min.js"></script>
+<script src="js/Detector.js"></script>
+
+<script type="text/javascript" src="modelscript.js"></script>
+</body>
+</html>

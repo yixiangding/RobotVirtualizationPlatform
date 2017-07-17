@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Test</title>
+<style type="text/css">
+	#span1 {
+		width: 200px;
+		height: 100px;
+		background: red;
+		position: absolute;
+	}
+	#span2 {
+		width :200px;
+		height: 100px;
+		background: grey;
+		position: absolute;
+	}
+	#fm {
+		position: absolute;
+		left: 10px;
+		background: grey;
+	}
+	#ipt1 {
+		float: top;
+	}
+</style>
+</head>
+<body>
+	<span id="span1">
+		<form id="fm" action="form_action.asp" method="get">
+		First name: <input id="ipt1" type="text" name="fname"/>
+		Last name: <input type="text" name="lname" />
+		<input type="submit" value="提交" />
+		</form>
+	</span>
+	<!-- <span id="span2"></span> -->
+</body>
+
